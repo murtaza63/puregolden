@@ -1,0 +1,51 @@
+export const areas = [
+  "Jumeirah",
+  "Umm Suqeim",
+  "Al Barsha",
+  "Al Quoz",
+  "Dubai Marina",
+  "JBR",
+  "Palm Jumeirah",
+  "Downtown Dubai",
+  "Business Bay",
+  "Dubai Hills",
+  "Arabian Ranches",
+  "Emirates Hills",
+  "Jumeirah Village Circle",
+  "Jumeirah Village Triangle",
+  "Mirdif",
+  "Al Nahda",
+  "Deira",
+  "Bur Dubai",
+  "Al Satwa",
+  "Al Safa",
+  "The Springs",
+  "The Meadows",
+  "Dubai Investment Park",
+  "Jebel Ali",
+  "Dubai Silicon Oasis",
+  "International City",
+  "Dubai South",
+  "Al Khawaneej",
+  "Al Warqa",
+  "Motor City",
+] as const;
+
+export const authorities = [
+  {
+    name: "Dubai Municipality (DM)",
+    role: "Default permit authority for most villa communities and established residential plots.",
+  },
+  {
+    name: "Dubai Development Authority (DDA)",
+    role: "Governs selected master developments. Demolition permits are filed on the DDA portal, not DM BPS.",
+  },
+  {
+    name: "Trakhees",
+    role: "Covers designated freehold and free-zone areas such as parts of JVC and Dubai Sports City.",
+  },
+  {
+    name: "DEWA",
+    role: "Electricity and water must be disconnected and an NOC issued before the demolition permit is released.",
+  },
+] as const;

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Demolition Company in Dubai | Licensed Villa & Building Demolition | Pure Golden",
+      "hasCanvas": false,
+      "bodyTextLen": 7773,
+      "bodyTextHash": "fde455de30ab280a7c75fdb19d9fca8a04fa57430c98abb02462972dcc488db7",
+      "bodyTextPrefix": "PURE GOLDEN DEMOLITION · DUBAI HOME ABOUT SERVICES PROJECTS GUID",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Demolition Company in Dubai | Licensed Villa & Building Demolition | Pure Golden",
+      "hasCanvas": false,
+      "bodyTextLen": 7699,
+      "bodyTextHash": "fe23fff82a44245dcda080c1f8a0374920a2ab16f66b31bab57f58948bafb3b6",
+      "bodyTextPrefix": "PURE GOLDEN DEMOLITION · DUBAI PURE GOLDEN WRECKING & DEMOLITION",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

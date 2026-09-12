@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-CP8wJgJA.js";import{p as t}from"./schema-COhIMhok.js";var n=e();function r({children:e,className:r}){return(0,n.jsx)(`p`,{className:t(`direct-answer max-w-3xl border-l-2 border-gold bg-card/80 py-4 pl-5 pr-4 text-base leading-relaxed text-foreground/90`,r),children:e})}export{r as t};
