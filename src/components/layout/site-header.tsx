@@ -8,16 +8,18 @@ import { cn } from "@/lib/utils";
 function Logo() {
   return (
     <Link to="/" className="flex items-center gap-3" aria-label="Pure Golden Demolition home">
-      <span className="flex h-9 w-9 flex-col justify-center gap-[3px] border border-gold/70 p-1.5" aria-hidden>
-        <span className="h-[3px] w-full bg-gold" />
-        <span className="h-[3px] w-[70%] bg-gold" />
-        <span className="h-[3px] w-[42%] bg-gold" />
-      </span>
+      <img
+        src="public\images\PG_Logo.svg"
+        alt="Pure Golden"
+        className="h-12 w-auto sm:h-14"   // larger & more prominent
+      />
       <span className="leading-none">
         <span className="display block text-[1.15rem] font-semibold tracking-[0.18em] text-foreground">
           PURE GOLDEN
         </span>
-        <span className="block text-[0.62rem] tracking-[0.28em] text-gold">DEMOLITION · DUBAI</span>
+        <span className="block text-[0.62rem] tracking-[0.28em] text-gold">
+          DEMOLITION · DUBAI
+        </span>
       </span>
     </Link>
   );

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500" width="680" height="500">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8E8A0"/>
+      <stop offset="20%" stop-color="#E8C84A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="75%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Top gold swoosh -->
+  <path fill="url(#gold)" d="M25 150 C100 40,250 5,400 25 C520 45,600 95,645 165 L620 180 C575 115,500 70,390 55 C260 35,130 60,60 145 Z"/>
+
+  <!-- Light inner swoosh so it shows on dark header -->
+  <path fill="#F0F0F0" d="M45 170 C115 65,255 30,400 45 C510 60,580 105,620 165 L595 180 C555 125,490 90,390 80 C265 65,145 95,80 165 Z"/>
+
+  <!-- P is WHITE for dark backgrounds -->
+  <text x="75" y="405"
+        font-family="Georgia, 'Times New Roman', Times, serif"
+        font-size="310"
+        font-weight="700"
+        fill="#FFFFFF"
+        letter-spacing="-14">P</text>
+
+  <!-- G stays gold -->
+  <text x="295" y="405"
+        font-family="Georgia, 'Times New Roman', Times, serif"
+        font-size="310"
+        font-weight="700"
+        fill="url(#gold)"
+        letter-spacing="-10">G</text>
+</svg>
