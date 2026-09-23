@@ -9,9 +9,9 @@ function Logo() {
   return (
     <Link to="/" className="flex items-center gap-3" aria-label="Pure Golden Demolition home">
       <img
-        src="public\images\PG_Logo.svg"
+        src="/images/PG_Logo.svg"
         alt="Pure Golden"
-        className="h-12 w-auto sm:h-14"   // larger & more prominent
+        className="h-12 w-auto sm:h-14"
       />
       <span className="leading-none">
         <span className="display block text-[1.15rem] font-semibold tracking-[0.18em] text-foreground">
