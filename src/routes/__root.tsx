@@ -12,7 +12,7 @@ import { MobileCta } from "@/components/layout/mobile-cta";
 import { JsonLd } from "@/components/seo/json-ld";
 import { graph } from "@/lib/schema";
 import { company } from "@/data/company";
-import appCss from "../styles.css?url";
+import "../styles.css";
 
 const APP_NAME = "Pure Golden Demolition";
 
@@ -38,7 +38,7 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-      { rel: "stylesheet", href: appCss },
+
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },
       { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
