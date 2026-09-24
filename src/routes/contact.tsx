@@ -11,6 +11,7 @@ import { Estimator } from "@/components/quote/estimator";
 import { company } from "@/data/company";
 import { services } from "@/data/services";
 import { breadcrumbSchema, graph } from "@/lib/schema";
+import { submitContactEnquiry } from "@/lib/contact.functions";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -35,18 +36,33 @@ function Contact() {
   const [sent, setSent] = useState(false);
   const [name, setName] = useState("");
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
-    const payload = Object.fromEntries(data.entries());
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
     try {
-      const prev = JSON.parse(localStorage.getItem("pg-enquiries") || "[]") as unknown[];
-      localStorage.setItem("pg-enquiries", JSON.stringify([...prev, { ...payload, at: Date.now() }]));
-    } catch {
-      /* ignore quota */
+      await submitContactEnquiry({
+        data: {
+          name: String(data.get("name") || ""),
+          phone: String(data.get("phone") || ""),
+          email: String(data.get("email") || ""),
+          area: String(data.get("area") || ""),
+          service: String(data.get("service") || ""),
+          message: String(data.get("message") || ""),
+        },
+      });
+
+      setName(String(data.get("name") || ""));
+      setSent(true);
+      form.reset();
+    } catch (error) {
+      console.error("Contact enquiry failed:", error);
+      alert(
+        "We could not send your enquiry. Please call or WhatsApp us directly."
+      );
     }
-    setName(String(payload.name || ""));
-    setSent(true);
   }
 
   return (
@@ -76,8 +92,8 @@ function Contact() {
               <Check className="size-8 text-gold" />
               <h2 className="mt-4 text-3xl">We have the enquiry{name ? `, ${name}` : ""}</h2>
               <p className="mt-3 text-sm text-muted">
-                This preview stores the message on this device. For a live quote, call or WhatsApp
-                the numbers on this page — that is how Dubai jobs actually get booked.
+                Thank you. Your enquiry has been sent successfully to our team.
+                We will contact you shortly regarding your demolition or site-work requirements.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <Button asChild>
