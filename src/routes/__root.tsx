@@ -37,22 +37,16 @@ export const Route = createRootRoute({
       { name: "format-detection", content: "telephone=yes" },
     ],
     links: [
-      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       {
         rel: "icon",
         type: "image/png",
-        sizes: "48x48",
-        href: "/favicon-48x48.png",
+        sizes: "32x32",
+        href: "/favicon-32x32.png",
       },
       {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.ico",
-      },
-      {
-        rel: "icon",
-        type: "image/svg+xml",
-        href: "/favicon.svg",
       },
       {
         rel: "apple-touch-icon",
@@ -61,7 +55,11 @@ export const Route = createRootRoute({
       },
 
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap",
