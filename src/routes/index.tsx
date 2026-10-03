@@ -85,7 +85,7 @@ function Home() {
             { icon: Shield, t: "Licensed in Dubai", d: "DM / DDA / Trakhees plots" },
             { icon: Clock, t: "Mon–Sat 08:00–18:00", d: "Site hours by permit" },
             { icon: Siren, t: "24/7 emergency", d: company.emergency.display },
-            { icon: MapPin, t: "Al Mateen, Dubai", d: "Work across the emirate" },
+            { icon: MapPin, t: "Al Mateena, Dubai", d: "Work across the emirate" },
           ].map((item) => (
             <div key={item.t} className="flex items-start gap-3">
               <item.icon className="mt-0.5 size-4 text-gold" />
