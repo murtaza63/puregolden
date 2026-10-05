@@ -26,6 +26,12 @@ export const Route = createFileRoute("/")({
           "Licensed demolition contractor in Dubai. Villa, building, industrial and partial demolition, excavation, concrete breaking, and site clearance — permits, DEWA NOCs, clean handover.",
       },
     ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://puregoldendemolition.com/",
+      },
+    ],
   }),
 });
 
