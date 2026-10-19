@@ -65,7 +65,7 @@ function Home() {
             {company.legalName}
           </p>
           <h1 className="mt-4 max-w-4xl text-5xl text-foreground sm:text-7xl lg:text-[5.5rem]">
-            Licensed demolition company in Dubai
+            Demolition company in Dubai
           </h1>
           <p className="mt-5 max-w-xl text-base text-foreground/85 sm:text-lg">
             Villa, building, and industrial demolition — permits, controlled takedown, debris gone,
