@@ -191,13 +191,28 @@ function Contact() {
               </a>
             </p>
           </div>
-          <iframe
-            title="Office M-02 Al Mateen Dubai map"
-            className="h-56 w-full border border-border"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Al%20Mateen%20Dubai&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          />
+
+          <div className="space-y-3">
+            <iframe
+              title="PURE GOLDEN WRECKING & DEMOLITION WORKS LLC - Dubai Office"
+              className="h-64 w-full border border-border"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              src="https://maps.google.com/maps?q=PURE%20GOLDEN%20WRECKING%20%26%20DEMOLITION%20WORKS%20LLC%2C%20Al%20Muteena%2C%20Dubai%2C%20UAE&z=15&output=embed"
+              allowFullScreen
+            />
+
+            <Button asChild className="w-full">
+              <a
+                href="https://maps.app.goo.gl/5aiZ3Zwnn64dTcrx9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Directions on Google Maps
+              </a>
+            </Button>
+          </div>
+
         </aside>
       </section>
 
