@@ -15,15 +15,57 @@ import { breadcrumbSchema, faqSchema, graph, howToSchema } from "@/lib/schema";
 
 export const Route = createFileRoute("/")({
   component: Home,
+
   head: () => ({
     meta: [
       {
-        title: "Demolition Company in Dubai | Licensed Villa & Building Demolition | Pure Golden",
+        title:
+          "Demolition Company in Dubai | DM Approved Contractor – Pure Golden",
       },
       {
         name: "description",
         content:
-          "Licensed demolition contractor in Dubai. Villa, building, industrial and partial demolition, excavation, concrete breaking, and site clearance — permits, DEWA NOCs, clean handover.",
+          "Looking for a demolition company in Dubai? Pure Golden provides villa, building and industrial demolition, excavation, concrete breaking and site clearance. Contact us for a quotation.",
+      },
+      {
+        name: "robots",
+        content: "index, follow",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:title",
+        content:
+          "Demolition Company in Dubai | Pure Golden",
+      },
+      {
+        property: "og:description",
+        content:
+          "Dubai Municipality-approved demolition contractor providing villa, building and industrial demolition, excavation and site clearance.",
+      },
+      {
+        property: "og:url",
+        content: "https://puregoldendemolition.com/",
+      },
+      {
+        property: "og:site_name",
+        content: "Pure Golden Wrecking & Demolition Works LLC",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content:
+          "Demolition Company in Dubai | Pure Golden",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Villa, building and industrial demolition services in Dubai. Request a quotation from Pure Golden.",
       },
     ],
     links: [
@@ -33,6 +75,7 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
+
 });
 
 function Home() {
